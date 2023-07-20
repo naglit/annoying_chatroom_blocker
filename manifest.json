@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Annoying Chatroom Blocker",
+  "description": "Remove any chatroom annoying.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "console.html",
+    "default_icon": "default_icon.jpg"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.chatwork.com/*"
+      ]
+    }
+  ]
+}
