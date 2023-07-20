@@ -7,6 +7,11 @@
     "default_popup": "console.html",
     "default_icon": "default_icon.jpg"
   },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
@@ -14,5 +19,8 @@
         "https://www.chatwork.com/*"
       ]
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }
