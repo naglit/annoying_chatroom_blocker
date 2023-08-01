@@ -24,7 +24,7 @@ function removeElements() {
             }
         }
         // Run this Once.
-        // observer.disconnect();
+        observer.disconnect();
     });
 }
 
